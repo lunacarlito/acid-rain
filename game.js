@@ -1,5 +1,6 @@
 scr="menu.html"
 var canvas, ctx, objbom, objruim, objespecial, player;
+var level;
 window.onload = function () {
 		
 	// referencia do teclado e posicoes iniciais do player
@@ -288,3 +289,4 @@ window.onload = function () {
 		return check;
 	}
 }		
+
