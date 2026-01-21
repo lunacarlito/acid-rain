@@ -99,7 +99,7 @@ window.onload = function () {
 			// define o Y inicial na linha onde foi definido o objeto
 			y:spawnLineY,
 		}
-
+		console.log("Objeto criado:", object);
 		// adiciona o novo objeto ao array objects[]
 		objects.push(object);
 	}
@@ -289,4 +289,5 @@ window.onload = function () {
 		return check;
 	}
 }		
+
 
