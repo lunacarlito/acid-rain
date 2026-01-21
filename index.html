@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Acid Rain</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="game.js"></script>
+		<style>
+				body {
+					background-color: pink;
+				}
+				
+				#canvas{border:1px solid black;
+				background-image:url(img/fundo.png);}
+				
+				div{			
+					font-size: 25pt;
+					text-align: center;
+					font-family: helvetica;
+					align-items:center;
+				}
+				
+				form {
+					font-size: 20pt;
+				}
+			</style>
+	</head>
+	
+	<body>
+		<!-- carrega todas as imagens -->
+		<img id="imgObjbom" src="img/obj_bom.png" style="display:none"/>
+		<img id="imgObjruim" src="img/obj_ruim.png" style="display:none"/>
+		<img id="imgObjespecial" src="img/obj_especial.png" style="display:none"/>
+		<img id="imgPlayer" src="img/personagem.png" style="display:none"/>
+		
+		<center><canvas id="canvas" width="1200px" height="600px"></canvas><center>
+	</body>
+</html>

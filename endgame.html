@@ -1,0 +1,68 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Acid Rain - Fim de Jogo</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" media="all"/> <!-- reset css -->
+			<script type="text/javascript">
+		
+				window.onload = function() {
+		
+					var cv = document.getElementById('canvas');
+					var ctx = cv.getContext('2d'); 
+				
+					//recebe o valor do score do jogo
+					var score = localStorage.getItem("score");
+					
+					ctx.textAlign = "center";
+					escreveNoCanvas(cv, ctx, "FIM DE JOGO", "40pt helvetica", "black", canvas.width/2, canvas.height/4);
+					escreveNoCanvas(cv, ctx, "Pontuação: "+score, "20pt helvetica", "black", canvas.width/2, canvas.height/2);
+				}
+		
+				function escreveNoCanvas(cv, ctx, texto, estilo, cor, x, y){
+					ctx.font = estilo;
+					ctx.fillStyle = cor;
+					ctx.fillText(texto, x, y);
+				}
+		
+			</script>
+			
+			<style>
+				body {
+					background-color: pink;
+				}
+				
+				div{
+					text-align: center;
+					font-family: helvetica;
+					align-items:center;
+				}
+				
+				h1 {
+					font-size: 20pt
+				}
+				
+				form {
+					font-size: 20pt;
+				}
+				
+				h2{
+					font-size: 10pt;
+				}
+			</style>
+		
+		</head>
+		
+		<body>
+			<center><canvas id="canvas" width="1200px" height="600px"></canvas></center>
+		
+			<div>
+				<br/><br/><h1>Acid Rain</h1><br/>
+				
+				
+				<h2> INF1030 </br>
+				Luiza Dias </br>
+				Vivian de Luna</h2>
+			</div>
+		</body>
+	</html>
